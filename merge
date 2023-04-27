@@ -1,0 +1,9 @@
+merger = PdfFileMerger()
+#Create a list witht he file paths
+pdf_files =['pdf_files/sample_page1.pdf', 'pdf_files/samples_page2.pdf']
+for pdf_file in pdf_files:
+#Appened PDF files
+merger.append(pdf_file)
+#write  out the merged PDF file
+merger.write("merged_2_pages.pdf")
+merger.close()
